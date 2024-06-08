@@ -38,8 +38,47 @@ print_words() and print_top().
 """
 
 import sys
+import string
 
 # +++your code here+++
+def build_word_count(text):
+  
+  ##Builds a dictionary where keys are words and values are word counts.
+
+  words = text.lower().split()
+  word_count = {}
+  for word in words:
+
+    if word in word_count:
+      word_count[word] += 1
+    else:
+      word_count[word] = 1
+  return word_count
+
+def print_words(filename):
+  
+  #This code prints all words found in the file along with their count which was calculated in the previous code.
+  
+  with open(filename, 'r') as f:
+    text = f.read()
+  word_count = build_word_count(text)
+  for word, count in word_count.items():
+    print(f"{word} - {count}")
+
+def print_top(filename, n=10):
+
+  #this code prints the top n most frequent words found in the text. And gives output in descending order of the word count. 
+
+ 
+  with open(filename, 'r') as f:
+    text = f.read()
+  word_count = build_word_count(text)
+  sorted_words = sorted(word_count.items(), key=lambda x: x[1], reverse=True)
+  for i in range(min(n, len(sorted_words))):
+    word, count = sorted_words[i]
+    print(f"{word} - {count}")
+
+
 # Define print_words(filename) and print_top(filename) functions.
 # You could write a helper utility function that reads a file
 # and builds and returns a word/count dict for it.
