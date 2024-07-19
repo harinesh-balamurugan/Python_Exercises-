@@ -43,7 +43,7 @@ import string
 # +++your code here+++
 def build_word_count(text):
   
-  ##Builds a dictionary where keys are words and values are word counts.
+  # Builds a dictionary where keys are words and values are word counts.
 
   words = text.lower().split()
   word_count = {}
@@ -57,7 +57,7 @@ def build_word_count(text):
 
 def print_words(filename):
   
-  #This code prints all words found in the file along with their count which was calculated in the previous code.
+  # This code prints all words found in the file along with their count which was calculated in the previous code.
   
   with open(filename, 'r') as f:
     text = f.read()
@@ -67,7 +67,7 @@ def print_words(filename):
 
 def print_top(filename, n=10):
 
-  #this code prints the top n most frequent words found in the text. And gives output in descending order of the word count. 
+  # this code prints the top n most frequent words found in the text. And gives output in descending order of the word count. 
 
  
   with open(filename, 'r') as f:

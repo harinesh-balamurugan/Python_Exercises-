@@ -25,6 +25,7 @@
 # and donuts(23) returns 'Number of donuts: many'
 def donuts(count):
   # +++your code here+++
+  # this code hepls to find the number of donuts
   if count >= 10:
         return "Number of donuts: many"
   else:
@@ -39,6 +40,7 @@ def donuts(count):
 # is less than 2, return instead the empty string.
 def both_ends(s):
   # +++your code here+++
+  # this code yeilds all string with the 1st and last 2 charcaters
   if len(s) < 2:
         return ""
   else:
@@ -59,6 +61,7 @@ def both_ends(s):
 # where all instances of stra have been replaced by strb.
 def fix_start(s):
   # +++your code here+++
+  # replacing the initilal characters with * 
   top = s[0]
   bottom = s[1:]
   fb = bottom.replace(top, '*')
@@ -74,6 +77,7 @@ def fix_start(s):
 # Assume a and b are length 2 or more.
 def mix_up(a, b):
   # +++your code here+++
+  # swapping the first 2 characters of first and last string
   a_s = b[:2] + a[2:]
   b_s = a[:2] + b[2:]
   return a_s + ' ' + b_s

@@ -70,7 +70,6 @@ def mimic_dict(filename):
     if i != list_of_words[len(list_of_words)-1]:
       foll_word  = [list_of_words[index+1] for (index, item) in enumerate(list_of_words) if item == i]
       mimic_dict[i] = foll_word
-
   return mimic_dict
 
 

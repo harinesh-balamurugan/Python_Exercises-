@@ -24,7 +24,7 @@ def match_ends(words):
   # +++your code here+++
    # def count_match_first_last(strings):
  
-#Counts the number of strings with matching first and last characters (with length 2 or more).
+# Counts the number of strings with matching first and last characters (with length 2 or more).
 
  count = 0
  for string in words:
@@ -55,7 +55,7 @@ def front_x(words):
 # Hint: use a custom key= function to extract the last element form each tuple.
 def sort_last(tuples):
   return sorted(tuples, key=lambda x: x[-1])
-#lambda functio is used here as the code is completed in a line.
+# lambda functio is used here as the code is completed in a line.
 
 
 

@@ -13,6 +13,7 @@
 # so [1, 2, 2, 3] returns [1, 2, 3]. You may create a new list or
 # modify the passed in list.
 def remove_adjacent(nums):
+  #removing the duplicates in list using list methods
   if not nums:
     return []
   n_list = []
